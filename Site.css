@@ -1,0 +1,214 @@
+body {
+    font: "Trebuchet MS", Verdana, sans-serif;
+    background-color: #FFFFFF;
+    color: #ffffff;
+}
+
+.background{
+    position:  absolute;
+    top: 0px;
+    left:  0px;
+    
+    z-index: -10;
+    width: 100%;
+    height: 400px;
+    
+    background-color: #ffffff;
+    border: 2px solid #fffffc;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#5bff29', endColorstr = '#ffffff');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#5bff29', endColorstr = '#ffffff')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #5bff29, #ffffff);
+    background-image: -ms-linear-gradient(top, #5bff29, #ffffff);
+    background-image: -o-linear-gradient(top, #5bff29, #ffffff);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#5bff29), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #5bff29, #ffffff);
+    background-image: linear-gradient(top, #5bff29, #ffffff);
+    /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+
+}
+
+/***************** NAVBAR STYLING ********************************/
+ul#menu
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    z-index: 2;
+    min-width: 900px;
+    width: 100%;
+    height: inherit;
+    
+    padding: 0px;
+    margin: 0px;
+    
+    background-color: #ffffff;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#5bff29');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#5bff29')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(top, #ffffff, #5bff29);
+    background-image: -ms-linear-gradient(top, #ffffff, #5bff29);
+    background-image: -o-linear-gradient(top, #ffffff, #5bff29);
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#5bff29));
+    background-image: -webkit-linear-gradient(top, #ffffff, #5bff29);
+    background-image: linear-gradient(top, #ffffff, #5bff29);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*Use "background-clip: padding-box" when using rounded corners to avoid the gradient bleeding through the corners*/
+    /*--IE9 WILL PLACE THE FILTER ON TOP OF THE ROUNDED CORNERS--*/
+
+
+}
+
+ul#menu li
+{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 7px;
+    
+    display: inline;
+    text-decoration: none;
+    
+   
+}
+
+ul#menu li a 
+{    
+    color: #0024ff;
+    background-color: #ffffff;
+
+    
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #4c76f5;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+    /**** Transition/Transform Timers ****/
+    -webkit-transition: -webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+    -webkit-border-radius: 5px;
+    -o-transition-property: width,height,-o-transform,background,font-size,opacity;
+    -o-transition-duration: 1s,1s,1s,1s,1s,1s;
+    -moz-transition-property: width,height,-o-transform,background,font-size,opacity;
+    -moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+    transition-property: width,height,transform,background,font-size,opacity;
+    transition-duration: 1s,1s,1s,1s,1s,1s;
+}
+
+ul#menu li a:hover {
+    text-shadow: 0px 0px 10px #fff;
+    text-shadow: 0px 0px 20px #fff;
+    
+    background-color: black;
+    border-color: #0d133a;
+    color:  #5bff29;
+    font-weight: bolder;
+}
+
+
+/********************** MAIN CONTENT ***********************************/
+#main
+{
+    z-index: 1;
+    margin: auto;
+    width: 800px;
+    
+    position: relative;
+    top: 50px;
+    
+    background-color: black;
+    padding: 30px;
+    
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 8px;
+   
+}
+
+h1
+{
+    font: Georgia, serif;
+    border-bottom: 3px solid #fc8b00;
+    color: #66e6e6;
+}
+
+p {
+    width: 750px;
+}
+
+
+/********************** FORMS STYLING **********************************/ 
+fieldset{
+    width: 800px;
+    word-wrap: normal;
+    padding: 0px;
+}
+
+fieldset label
+{
+  
+    display:block;
+    padding:4px;
+}
+
+form
+{
+    
+}
+
+input[type="text"],input[type="password"]
+{
+    width:300px;
+}
+
+input[type="submit"]
+{
+    padding:4px;
+}
+
+.container
+{
+    width: 500px;
+    height: inherit;
+    
+}
+
+/* Tables */
+/*table{
+    width:500px;
+}
+th{
+    height:20px;
+    border: 1px solid black;
+    text-align: center;
+}
+tr{
+    height: 30px;
+    text-align: center;
+    border: 2px solid black;
+}
+td{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}*/
